@@ -1,0 +1,36 @@
+﻿<Window x:Class="Evaluator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Evaluator"
+        mc:Ignorable="d"
+        Title="Evaluator" Height="450" Width="500" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Contractor Type" HorizontalAlignment="Left" Margin="10,40,0,339" VerticalAlignment="Center" Height="40" Width="200" Foreground="#FF007AFF" FontFamily="Segoe UI Semibold" FontSize="20" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="ComboBoxContractorType" HorizontalAlignment="Right" Margin="0,40,10,0" VerticalAlignment="Top" Width="145" Height="40" BorderBrush="#FF007AFF" Foreground="#FF007AFF" FontFamily="Segoe UI Emoji" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <ComboBoxItem x:Name="Aitem1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">General Contractor</ComboBoxItem>
+            <ComboBoxItem x:Name="Aitem2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Subcontractor</ComboBoxItem>
+            <ComboBoxItem x:Name="Aitem3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Owner</ComboBoxItem>
+            <ComboBoxItem x:Name="Aitem4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Architect</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Floors" HorizontalAlignment="Left" Margin="10,100,0,279" VerticalAlignment="Center" Height="40" Width="200" Foreground="#FF007AFF" FontFamily="Segoe UI Semibold" FontSize="20" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="ComboBoxFloors" HorizontalAlignment="Right" Margin="0,100,10,0" VerticalAlignment="Top" Width="145" Height="40" BorderBrush="#FF007AFF" Foreground="#FF007AFF" FontFamily="Segoe UI Emoji" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <ComboBoxItem x:Name="Bitem1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="1"/>
+            <ComboBoxItem x:Name="Bitem2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="2"/>
+            <ComboBoxItem x:Name="Bitem3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="3"/>
+            <ComboBoxItem x:Name="Bitem4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="4"/>
+        </ComboBox>
+        <Label Content="Complex" HorizontalAlignment="Left" Margin="10,160,0,219" VerticalAlignment="Center" Height="40" Width="200" Foreground="#FF007AFF" FontFamily="Segoe UI Semibold" FontSize="20" VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="flag_complex" Content="Yes" HorizontalAlignment="Right" Margin="0,160,10,219" VerticalAlignment="Center" Height="40" Width="145" Background="{x:Null}" BorderBrush="#FF007AFF" Foreground="#FF007AFF" VerticalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+        <Label Content="Overall square feet" HorizontalAlignment="Left" Margin="10,220,0,159" VerticalAlignment="Center" Height="40" Width="200" Foreground="#FF007AFF" FontFamily="Segoe UI Semibold" FontSize="20" VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="flag_under3k" Content="&lt;3000" HorizontalAlignment="Right" Margin="0,220,82,159" VerticalAlignment="Center" Height="40" Width="73" Background="{x:Null}" BorderBrush="#FF007AFF" Foreground="#FF007AFF" VerticalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+        <CheckBox x:Name="flag_above3k" Content="3000+" HorizontalAlignment="Right" Margin="0,221,10,158" VerticalAlignment="Center" Height="40" Width="72" Background="{x:Null}" BorderBrush="#FF007AFF" Foreground="#FF007AFF" VerticalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+        <Label Content="Project Type" HorizontalAlignment="Left" Margin="10,280,0,99" VerticalAlignment="Center" Height="40" Width="200" Foreground="#FF007AFF" FontFamily="Segoe UI Semibold" FontSize="20" VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="flag_commercial" Content="Commercial" HorizontalAlignment="Right" Margin="0,280,10,99" VerticalAlignment="Center" Height="40" Width="145" Background="{x:Null}" BorderBrush="#FF007AFF" Foreground="#FF007AFF" VerticalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+        <Label Content="Expected Price:" HorizontalAlignment="Left" Margin="10,369,0,10" VerticalAlignment="Center" Height="40" Width="200" Foreground="#FF007AFF" FontFamily="Segoe UI Semibold" FontSize="20" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="result" HorizontalAlignment="Right" Height="40" Margin="0,0,10,11" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="164" FontFamily="Segoe UI Emoji" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF007AFF" SelectionBrush="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="calcButton" Content="Calculate Price" Margin="10,326,10,56" Height="39" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF007AFF" VerticalAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="16"/>
+
+    </Grid>
+</Window>
